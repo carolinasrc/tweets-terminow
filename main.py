@@ -12,7 +12,7 @@ description="simple script to demonstrate argparse usage"
 )
 
 # Adicionando um parâmetro posicional 
-parser.add_argument('printme', help="The string tomain.py be printed")
+parser.add_argument('printme', help="The string to be printed")
 
 # Fazendo parse dos argumentos
 arguments = parser.parse_args()
@@ -26,3 +26,6 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
 response = api.update_status(arguments.printme)
 print('Status posted', response)
+
+# como rodar essa bagaça no terminal: 
+# CONSUMER_KEY=etcetc python3 nome_arquivo.py "hello world"
