@@ -1,6 +1,6 @@
 import tweepy, argparse, os
 
-# variáveis de ambiente de autentificação 
+# variáveis de ambiente pra autentificação 
 consumer_key = os.environ.get('CONSUMER_KEY')
 consumer_secret = os.environ.get('CONSUMER_SECRET')
 access_token = os.environ.get('ACCESS_TOKEN')
