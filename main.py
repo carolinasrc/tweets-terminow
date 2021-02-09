@@ -1,6 +1,6 @@
 import tweepy, argparse, os
 
-# variáveis de ambiente de autentificação 
+# variáveis de ambiente pra autentificação 
 consumer_key = os.environ.get('CONSUMER_KEY')
 consumer_secret = os.environ.get('CONSUMER_SECRET')
 access_token = os.environ.get('ACCESS_TOKEN')
@@ -20,7 +20,7 @@ arguments = parser.parse_args()
 # Imprimindo a String 
 print(arguments.printme)
 
-# Acessando, enviando e recebendo o response da mensagem
+# Acessando, enviando e recebendo a response da mensagem
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
